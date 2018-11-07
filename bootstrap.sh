@@ -28,7 +28,8 @@ sed '$ a 192.168.56.125 OracleLinuxML' -i /etc/hosts
 #  Python programming language
 ################################################################################
 
-yum -y install bzip2
+yum -y install bzip2 wget
+wget https://repo.continuum.io/archive/Anaconda2-5.2.0-Linux-x86_64.sh -P /tmp/files
 mv /tmp/files /root/
 chmod +x /root/files/Anaconda2-5.2.0-Linux-x86_64.sh
 su -
